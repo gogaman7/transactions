@@ -59,10 +59,22 @@ const ApolloApp = () => (
             }
           }}
         />
-        <Route path="/accounts" render={() => <Accounts backPath="/home" />} />
+        <Route
+          path="/accounts"
+          render={() => (
+            <Screen>
+              <Accounts backPath="/home" />
+            </Screen>
+          )}
+        />
+        } />
         <Route
           path="/transactions/account/:accountNumber"
-          component={Transactions}
+          render={({ match }) => (
+            <Screen>
+              <Transactions match={match} />
+            </Screen>
+          )}
         />
         <Route
           path="/transactions"
