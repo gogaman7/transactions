@@ -1,0 +1,32 @@
+{
+  "name": "transactions",
+  "version": "1.0.0",
+  "description": "List of Transactions for a specific account",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "1.2.19",
+    "@fortawesome/free-solid-svg-icons": "5.9.0",
+    "@fortawesome/react-fontawesome": "0.1.4",
+    "apollo-cache-inmemory": "1.6.2",
+    "apollo-client": "2.6.2",
+    "apollo-link-context": "1.0.17",
+    "apollo-link-http": "1.5.14",
+    "graphql": "14.3.1",
+    "graphql-tag": "2.10.1",
+    "react": "16.8.6",
+    "react-apollo": "2.5.6",
+    "react-dom": "16.8.6",
+    "react-native-web": "0.11.x",
+    "react-router-dom": "5.0.1",
+    "react-router-native": "5.0.1",
+    "react-scripts": "3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
