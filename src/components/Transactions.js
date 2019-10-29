@@ -22,6 +22,7 @@ const FindTransactionsQuery = gql`
 
 const Transactions = props => (
   <View>
+    <Text>First symbol in transactions</Text>
     <Query
       query={FindTransactionsQuery}
       variables={{ accountNumber: props.match.params.accountNumber }}
@@ -30,7 +31,7 @@ const Transactions = props => (
         if (loading) return <div>Loading...</div>;
         if (error) return <div>${error.message}</div>;
 
-        return <Text>{data.findTransactions[1].symbol}</Text>;
+        return <Text>{data.findTransactions[0].symbol}</Text>;
       }}
     </Query>
   </View>
